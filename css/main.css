@@ -464,7 +464,7 @@ img {
 
 @media screen and (min-width: 960px) {
   .contacts-container {
-    margin: 50px 40px 0 40px;
+    margin: 40px 35px 0 35px;
   }
 }
 
@@ -561,15 +561,9 @@ img {
   }
 }
 
-@media screen and (min-width: 960px) {
-  .skills-container {
-    margin: 50px 40px 0 40px;
-  }
-}
-
 .skills-item {
   margin-left: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   color: #b17f83;
   font-size: 14px;
   font-weight: 400;
@@ -581,7 +575,7 @@ img {
 }
 
 .about-me-container {
-  padding: 30px 30px 80px 30px;
+  padding: 20px 30px 50px 30px;
 }
 
 @media screen and (max-width: 767px) {
