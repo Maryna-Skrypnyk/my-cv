@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $body-bg-color;
+  padding: 40px 20px;
+  font-family: $main-font;
+
+  @media screen and (max-width: 767px) {
+    padding: 0;
+  }
+}
+
+.wrapper {
+  background: $primary-white-color;
+  max-width: 1200px;
+  min-width: 320px;
+  margin: 0 auto;
+  box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

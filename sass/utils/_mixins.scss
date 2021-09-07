@@ -1,0 +1,40 @@
+@mixin titlefont($color) {
+  color: $color;
+  font-size: $title-about-font-size;
+  font-weight: $title-font-weight;
+  line-height: $title-about-line-height;
+}
+
+@mixin mainfont($color) {
+  color: $color;
+  font-size: $main-font-size;
+  font-weight: $primary-font-weight;
+  line-height: $profession-line-height;
+}
+
+@mixin companyfont($color) {
+  color: $color;
+  font-size: $profession-font-size;
+  font-weight: $title-font-weight;
+  line-height: $profession-line-height;
+}
+
+@mixin secondaryfont() {
+  color: $secondary-text-color;
+  font-size: $secondary-font-size;
+  font-weight: $primary-font-weight;
+  line-height: $secondary-line-height;
+}
+
+@mixin namefont($color) {
+  color: $color;
+  font-size: $name-font-size;
+  font-weight: $title-font-weight;
+  line-height: $main-line-height;
+}
+
+@mixin transit($property...) {
+  transition-property: $property;
+  transition-duration: $duration;
+  transition-timing-function: $cubic-bezier;
+}

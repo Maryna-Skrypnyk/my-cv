@@ -1,0 +1,195 @@
+.about-me-container {
+  padding: 30px 30px 80px 30px;
+
+  @media screen and (max-width: 767px) {
+    padding-left: calc((100vw - 320px) / (480 - 320) * (40 - 30) + 30px);
+    padding-right: calc((100vw - 320px) / (480 - 320) * (40 - 30) + 30px);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 30px 40px 80px 40px;
+  }
+
+  @media screen and (min-width: 960px) {
+    padding: 30px 50px 80px 50px;
+  }
+}
+
+.info-tablet {
+  margin-bottom: 20px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.info-container {
+  margin-bottom: 30px;
+
+  .profession {
+    //    margin-bottom: 25px;
+    @include mainfont($primary-black-color);
+    font-size: 25px;
+    font-weight: $title-font-weight;
+  }
+
+  .name {
+    margin-bottom: 0;
+    font-weight: $title-font-weight;
+    line-height: $name-line-height;
+    font-size: 30px;
+
+    @media screen and (max-width: 480px) {
+      font-size: calc((100vw - 320px) / (480 - 320) * (30 - 25) + 25px);
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 35px;
+    }
+
+    @media screen and (min-width: 960px) {
+      font-size: 45px;
+    }
+  }
+
+  .description {
+    @include mainfont($primary-black-color);
+  }
+}
+
+.personal {
+  margin-bottom: 15px;
+  @include secondaryfont();
+  color: $accent-color;
+}
+
+.profession-time {
+  @include secondaryfont();
+}
+
+.projects-container {
+  margin-bottom: 20px;
+}
+
+.about-me-title {
+  margin-bottom: 10px;
+  @include titlefont($primary-black-color);
+}
+
+.projects-item {
+  margin-left: 20px;
+  font-weight: $title-font-weight;
+
+  .projects-link {
+    // @include mainfont($link-color);
+    @include companyfont($accent-color);
+    text-decoration: none;
+
+    @include transit(font-size);
+
+    &:hover,
+    &:focus,
+    .projects-item:hover &,
+    .projects-item:focus & {
+      font-size: 18px;
+      text-decoration: underline;
+    }
+  }
+
+  .tech-name {
+    @include mainfont($link-color);
+  }
+}
+
+.dots {
+  color: $dots-color;
+  font-weight: $dots-font-weight;
+
+  @media screen and (max-width: 657px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 658px) and (max-width: 767px) {
+    display: inline;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1030px) {
+    display: inline;
+  }
+}
+
+.link-description {
+  @media screen and (max-width: 657px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 657px) and (max-width: 767px) {
+    display: inline;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1030px) {
+    display: block;
+  }
+}
+
+.about-project {
+  @include mainfont($link-color);
+}
+
+.about {
+  font-weight: 600;
+}
+
+.profession-title {
+  margin-top: 10px;
+  // margin-bottom: 5px;
+  @include companyfont($primary-black-color);
+}
+
+.profession-company {
+  color: $accent-color;
+  text-decoration: none;
+  @include transit(text-decoration);
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.profession-divider {
+  color: $primary-black-color;
+}
+
+.profession-divider-personal {
+  color: $accent-color;
+}
+
+.profession-duties {
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+.profession-duties-item {
+  margin-left: 20px;
+  @include mainfont($link-color);
+}
+
+.education-company {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  @include companyfont($accent-color);
+  text-decoration: none;
+  @include transit(text-decoration);
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.education-duties {
+  margin-top: 5px;
+  margin-bottom: 0;
+  @include mainfont($link-color);
+}
