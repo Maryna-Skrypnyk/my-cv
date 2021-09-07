@@ -77,6 +77,7 @@
 
 .projects-item {
   margin-left: 20px;
+  margin-bottom: 5px;
   font-weight: $title-font-weight;
 
   .projects-link {
@@ -91,7 +92,7 @@
     .projects-item:hover &,
     .projects-item:focus & {
       font-size: 18px;
-      text-decoration: underline;
+      // text-decoration: underline;
     }
   }
 
@@ -149,11 +150,12 @@
 .profession-company {
   color: $accent-color;
   text-decoration: none;
-  @include transit(text-decoration);
+  @include transit(font-size);
 
   &:hover,
   &:focus {
-    text-decoration: underline;
+    // text-decoration: underline;
+    font-size: 17px;
   }
 }
 
@@ -168,10 +170,10 @@
 .profession-duties {
   margin-top: 5px;
   margin-bottom: 25px;
+  // list-style: none;
 }
 
 .profession-duties-item {
-  margin-left: 20px;
   @include mainfont($link-color);
 }
 
@@ -180,16 +182,23 @@
   margin-bottom: 5px;
   @include companyfont($accent-color);
   text-decoration: none;
-  @include transit(text-decoration);
+  @include transit(font-size);
 
   &:hover,
   &:focus {
-    text-decoration: underline;
+    // text-decoration: underline;
+    font-size: 17px;
   }
 }
 
 .education-duties {
-  margin-top: 5px;
+  margin-top: 0;
   margin-bottom: 0;
+  list-style: none;
+  @include mainfont($link-color);
+}
+
+.education-duties-item {
+  // margin-left: 20px;
   @include mainfont($link-color);
 }

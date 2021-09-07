@@ -82,6 +82,7 @@
 .contacts-link {
   display: flex;
   align-items: center;
+  margin-bottom: 5px;
   text-decoration: none;
   @include mainfont($accent-color);
   @include transit(font-weight);
@@ -144,6 +145,7 @@
 
 .skills-item {
   margin-left: 20px;
+  margin-bottom: 5px;
   @include mainfont($accent-color);
 }
 
