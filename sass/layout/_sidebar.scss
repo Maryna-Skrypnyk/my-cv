@@ -27,16 +27,18 @@
   }
 
   .profession-mob {
-    margin-bottom: 15px;
+    // margin-bottom: 15px;
     @include mainfont($primary-text-color);
     font-weight: $secondary-font-weight;
     font-size: $profession-font-size;
   }
 
   .name-mob {
+    margin-bottom: 15px;
     @include namefont($primary-white-color);
 
     @media screen and (max-width: 480px) {
+      // margin-bottom: 30px;
       font-size: calc((100vw - 320px) / (480 - 320) * (30 - 24) + 24px);
     }
 
@@ -60,7 +62,7 @@
 }
 
 .contacts-container {
-  margin: 50px 35px 0 35px;
+  margin: 30px 35px 0 35px;
 
   @media screen and (max-width: 767px) {
     margin-left: calc((100vw - 320px) / (480 - 320) * (60 - 35) + 35px);

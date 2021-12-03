@@ -405,7 +405,6 @@ img {
 }
 
 .info-mob .profession-mob {
-  margin-bottom: 15px;
   color: #d6d8db;
   font-size: 14px;
   font-weight: 400;
@@ -415,6 +414,7 @@ img {
 }
 
 .info-mob .name-mob {
+  margin-bottom: 15px;
   color: #ffffff;
   font-size: 45px;
   font-weight: 700;
@@ -452,7 +452,7 @@ img {
 }
 
 .contacts-container {
-  margin: 50px 35px 0 35px;
+  margin: 30px 35px 0 35px;
 }
 
 @media screen and (max-width: 767px) {
@@ -621,7 +621,7 @@ img {
 }
 
 .info-container .name {
-  margin-bottom: 0;
+  margin-bottom: 15px;
   font-weight: 700;
   line-height: 1.33;
   font-size: 30px;
