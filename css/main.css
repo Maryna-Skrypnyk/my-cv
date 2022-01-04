@@ -866,6 +866,7 @@ img {
   }
   .sidebar {
     width: 330px;
+    height: 100vh;
   }
   .info-mob {
     display: none;
