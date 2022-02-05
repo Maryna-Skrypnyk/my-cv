@@ -1,5 +1,14 @@
 .about-me-container {
-  padding: 20px 30px 50px 30px;
+  padding: 30px 30px 50px 30px;
+
+  &.light-theme {
+    background-color: $primary-white-color;
+  }
+
+  &.dark-theme {
+    background-color: $sidebar-bg-color;
+    color: $primary-white-color;
+  }
 
   @media screen and (max-width: 767px) {
     padding-left: calc((100vw - 320px) / (480 - 320) * (40 - 30) + 30px);
@@ -7,11 +16,11 @@
   }
 
   @media screen and (min-width: 768px) {
-    padding: 30px 40px 80px 40px;
+    padding: 45px 40px 80px 40px;
   }
 
   @media screen and (min-width: 960px) {
-    padding: 30px 50px 80px 50px;
+    padding: 45px 50px 80px 50px;
   }
 }
 
@@ -24,36 +33,39 @@
 
 .info-container {
   margin-bottom: 30px;
+}
 
-  .profession {
-    //    margin-bottom: 25px;
-    @include mainfont($primary-black-color);
-    font-size: 25px;
-    font-weight: $title-font-weight;
+.profession {
+  //    margin-bottom: 25px;
+  // @include mainfont($primary-black-color);
+  line-height: $profession-line-height;
+  font-size: 25px;
+  font-weight: $title-font-weight;
+}
+
+.name {
+  margin-bottom: 15px;
+  font-weight: $title-font-weight;
+  line-height: $name-line-height;
+  font-size: 30px;
+
+  @media screen and (max-width: 480px) {
+    font-size: calc((100vw - 320px) / (480 - 320) * (30 - 25) + 25px);
   }
 
-  .name {
-    margin-bottom: 15px;
-    font-weight: $title-font-weight;
-    line-height: $name-line-height;
-    font-size: 30px;
-
-    @media screen and (max-width: 480px) {
-      font-size: calc((100vw - 320px) / (480 - 320) * (30 - 25) + 25px);
-    }
-
-    @media screen and (min-width: 768px) {
-      font-size: 35px;
-    }
-
-    @media screen and (min-width: 960px) {
-      font-size: 45px;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 35px;
   }
 
-  .description {
-    @include mainfont($primary-black-color);
+  @media screen and (min-width: 960px) {
+    font-size: 45px;
   }
+}
+
+.description {
+  font-size: $main-font-size;
+  font-weight: $primary-font-weight;
+  line-height: $profession-line-height;
 }
 
 .personal {
@@ -72,7 +84,10 @@
 
 .about-me-title {
   margin-bottom: 10px;
-  @include titlefont($primary-black-color);
+  // @include titlefont($primary-black-color);
+  font-size: $title-about-font-size;
+  font-weight: $title-font-weight;
+  line-height: $title-about-line-height;
 }
 
 .projects-item {
@@ -95,10 +110,13 @@
       // text-decoration: underline;
     }
   }
+}
 
-  .tech-name {
-    @include mainfont($link-color);
-  }
+.tech-name {
+  // @include mainfont($link-color);
+  font-size: $main-font-size;
+  font-weight: $primary-font-weight;
+  line-height: $profession-line-height;
 }
 
 .dots {
@@ -134,7 +152,10 @@
 }
 
 .about-project {
-  @include mainfont($link-color);
+  // @include mainfont($link-color);
+  font-size: $main-font-size;
+  font-weight: $primary-font-weight;
+  line-height: $profession-line-height;
 }
 
 .about {
@@ -144,7 +165,10 @@
 .profession-title {
   margin-top: 10px;
   // margin-bottom: 5px;
-  @include companyfont($primary-black-color);
+  // @include companyfont($primary-black-color);
+  font-size: $profession-font-size;
+  font-weight: $title-font-weight;
+  line-height: $profession-line-height;
 }
 
 .profession-company {
@@ -175,7 +199,10 @@
 }
 
 .profession-duties-item {
-  @include mainfont($link-color);
+  // @include mainfont($link-color);
+  font-size: $main-font-size;
+  font-weight: $primary-font-weight;
+  line-height: $profession-line-height;
 }
 
 .education-company {
@@ -196,10 +223,20 @@
   margin-top: 0;
   margin-bottom: 0;
   list-style: none;
-  @include mainfont($link-color);
+  // @include mainfont($link-color);
+  font-size: $main-font-size;
+  font-weight: $primary-font-weight;
+  line-height: $profession-line-height;
 }
 
 .education-duties-item {
   // margin-left: 20px;
-  @include mainfont($link-color);
+  // @include mainfont($link-color);
+  font-size: $main-font-size;
+  font-weight: $primary-font-weight;
+  line-height: $profession-line-height;
+}
+
+.projects-container.dark-theme {
+  color: $primary-white-color;
 }

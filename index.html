@@ -8,298 +8,342 @@
     <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> -->
   </head>
   <body>
+
+    <div class="toolbar">
+        <!-- Разметка переключателя темы -->
+        <div class="theme-switch">
+          <svg class="theme-switch__icon" role="img" aria-label="Иконка солнца">
+            <use href="./img/sprite.svg#sun"></use>
+          </svg>
+
+          <div class="theme-switch__control">
+            <input
+              class="theme-switch__toggle"
+              type="checkbox"
+              name="theme"
+              id="theme-switch-toggle"
+              aria-label="Переключить между тёмной и светлой темой"
+            />
+            <label
+              aria-hidden="true"
+              class="theme-switch__track"
+              for="theme-switch-toggle"
+            >
+            </label>
+            <div aria-hidden="true" class="theme-switch__marker"></div>
+          </div>
+
+          <svg class="theme-switch__icon" aria-label="Иконка луны">
+            <use href="./img/sprite.svg#moon"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
     <!--main container-->
     <div class="wrapper">
-      <aside class="sidebar">
-        <div class="info-mob">
-          <h1 class="name-mob">Maryna Skrypnyk</h1>
-          <h2 class="profession-mob">Front-End Developer</h2>
-          <!-- <p class="personal-mob">
+      
+    <aside class="sidebar">
+      <div class="info-mob">
+        <h1 class="name-mob">Maryna Skrypnyk</h1>
+        <h2 class="profession-mob">Front-End Developer</h2>
+        <!-- <p class="personal-mob">
             DOB: 12-10-1985 <span class="profession-divider-mob">|</span> Reside
             in Kyiv <span class="profession-divider-mob">|</span>
             Citizenship: Ukraine
           </p> -->
+      </div>
+      <img class="my-photo" src="./img/photo-1.jpg" alt="My photo" />
+
+      <!--contacts container-->
+      <div class="contacts-container">
+        <p class="personal">
+          DOB: 12-10-1985
+          <span class="profession-divider profession-divider-personal">|</span>
+          Kyiv
+          <span class="profession-divider profession-divider-personal">|</span>
+          Ukraine
+        </p>
+        <h3 class="contacts-title">Contacts</h3>
+        <div class="contact-block">
+          <!-- <span class="contacts-link-type">Т:</span> -->
+
+          <a class="contacts-link" href="tel:+380979445659">
+            <svg class="icon-contacts" width="20" height="20">
+              <use class="icon" href="./img/sprite.svg#icon-phone"></use></svg
+            >+38 097 944 56 59
+          </a>
         </div>
-        <img class="my-photo" src="./img/photo-1.jpg" alt="My photo" />
-        
+        <div class="contact-block">
+          <!-- <span class="contacts-link-type">Е:</span> -->
+          <a class="contacts-link" href="mailto:marina.skrypnyk@gmail.com">
+            <svg class="icon-contacts" width="20" height="20">
+              <use class="icon" href="./img/sprite.svg#icon-email"></use></svg
+            >marina.skrypnyk@gmail.com
+          </a>
+        </div>
+        <div class="contact-block">
+          <!-- <span class="contacts-link-type">G:</span> -->
+          <a
+            class="contacts-link"
+            href="https://github.com/Maryna-Skrypnyk"
+            target="_blank"
+          >
+            <svg class="icon-contacts" width="20" height="20">
+              <use class="icon" href="./img/sprite.svg#icon-github"></use></svg
+            >github.com/maryna-skrypnyk/</a
+          >
+        </div>
+        <div class="contact-block">
+          <!-- <span class="contacts-link-type">L:</span> -->
+          <a
+            class="contacts-link start"
+            href="https://www.linkedin.com/in/maryna-skrypnyk/"
+            target="_blank"
+          >
+            <svg class="icon-contacts start" width="20" height="20">
+              <use
+                class="icon"
+                href="./img/sprite.svg#icon-linkedin"
+              ></use></svg
+            >linkedin.com/in/maryna-skrypnyk</a
+          >
+        </div>
+      </div>
 
-        <!--contacts container-->
-        <div class="contacts-container">
-          <p class="personal">
-              DOB: 12-10-1985
-              <span class="profession-divider profession-divider-personal"
-                >|</span
-              >
-              Kyiv
-              <span class="profession-divider profession-divider-personal"
-                >|</span
-              >
-              Ukraine
-          </p>
-          <h3 class="contacts-title">Contacts</h3>
-          <div class="contact-block">
-            <!-- <span class="contacts-link-type">Т:</span> -->
+      <!-- skills container-->
+      <div class="skills-container">
+        <h3 class="skills-title">Technical Skills</h3>
+        <ul class="skills-list">
+          <li class="skills-item">
+            <span class="skills-text">HTML5/CSS3/SASS</span>
+          </li>
+          <li class="skills-item">
+            <span class="skills-text">JavaScript</span>
+          </li>
+          <li class="skills-item">
+            <span class="skills-text">React.js</span>
+          </li>
+          <li class="skills-item">
+            <span class="skills-text">React router</span>
+          </li>
+          <li class="skills-item">
+            <span class="skills-text">Redux</span>
+          </li>
+          <li class="skills-item">
+            <span class="skills-text">GIT</span>
+          </li>
+          <li class="skills-item">
+            <span class="skills-text">WebPack/Parcel</span>
+          </li>
+          <li class="skills-item">
+            <span class="skills-text">Node.js</span>
+          </li>
+          <li class="skills-item">
+            <span class="skills-text">Scrum</span>
+          </li>
+          <li class="skills-item">
+            <span class="skills-text">Agile</span>
+          </li>
+        </ul>
+      </div>
 
-            <a class="contacts-link" href="tel:+380979445659">
-              <svg class="icon-contacts" width="20" height="20">
-                <use class="icon" href="./img/sprite.svg#icon-phone"></use></svg
-              >+38 097 944 56 59
-            </a>
-          </div>
-          <div class="contact-block">
-            <!-- <span class="contacts-link-type">Е:</span> -->
-            <a class="contacts-link" href="mailto:marina.skrypnyk@gmail.com">
-              <svg class="icon-contacts" width="20" height="20">
-                <use class="icon" href="./img/sprite.svg#icon-email"></use></svg
-              >marina.skrypnyk@gmail.com
-            </a>
-          </div>
-          <div class="contact-block">
-            <!-- <span class="contacts-link-type">G:</span> -->
+      <!--soft skills container-->
+      <div class="skills-container">
+        <h3 class="skills-title">Soft Skills</h3>
+        <ul class="skills-list">
+          <li class="skills-item">
+            <span class="skills-text">Teamwork</span>
+          </li>
+          <li class="skills-item">
+            <span class="skills-text">Proactive</span>
+          </li>
+          <li class="skills-item">
+            <span class="skills-text">Extreme self-motivation</span>
+          </li>
+          <li class="skills-item">
+            <span class="skills-text">Enthusiasm and dedication</span>
+          </li>
+          <li class="skills-item">
+            <span class="skills-text">A pretty good eye for details</span>
+          </li>
+        </ul>
+      </div>
+
+      <!--languages container-->
+      <div class="skills-container">
+        <h3 class="skills-title">Languages</h3>
+        <ul class="skills-list">
+          <li class="skills-item">
+            <span class="skills-text">Ukrainian..........[Native]</span>
+          </li>
+          <li class="skills-item">
+            <span class="skills-text">Russian...............[Proficiency]</span>
+          </li>
+          <li class="skills-item">
+            <span class="skills-text"
+              >English................[Pre-Intermediate]</span
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!--hobby container-->
+      <div class="skills-container">
+        <h3 class="skills-title">Interests</h3>
+        <ul class="skills-list">
+          <li class="skills-item">
+            <span class="skills-text">Fitness</span>
+          </li>
+          <li class="skills-item">
+            <span class="skills-text">Reading</span>
+          </li>
+          <li class="skills-item">
+            <span class="skills-text">Board games</span>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!--about me container-->
+    <div class="about-me-container">
+      <!--about me main info-->
+
+      <div class="info-container">
+        <div class="info-tablet">
+          <h1 class="name">Maryna Skrypnyk</h1>
+          <h2 class="profession">Front-End Developer</h2>
+        </div>
+
+        <p class="description">
+          I am looking for a position in a company that's aimed at growth and
+          progress together with a team. I have sound knowledge of HTML, CSS,
+          JavaScript and React. I studied the basics of Node.js. Also, I have
+          hands-on experience in following Agile/Scrum methodology when working
+          in a team. I want to develop my skills as well as grow with a team.
+        </p>
+      </div>
+
+      <!--projects container-->
+      <div class="projects-container">
+        <h3 class="about-me-title">Project experience</h3>
+        <ol class="projects-list">
+          <li class="projects-item">
             <a
-              class="contacts-link"
-              href="https://github.com/Maryna-Skrypnyk"
+              class="projects-link"
+              href="https://maryna-skrypnyk.github.io/icecream-project-group-9/"
               target="_blank"
+              >Ice Cream</a
             >
-              <svg class="icon-contacts" width="20" height="20">
-                <use
-                  class="icon"
-                  href="./img/sprite.svg#icon-github"
-                ></use></svg
-              >github.com/maryna-skrypnyk/</a
+            <span class="dots">............................</span>
+            <span class="link-description"
+              ><b>[</b
+              ><span class="tech-name">HTML5, CSS3, SASS, JS, Parcel, GIT</span
+              ><b>]</b></span
             >
-          </div>
-          <div class="contact-block">
-            <!-- <span class="contacts-link-type">L:</span> -->
+            <p class="about-project">
+              <span class="about">About project:</span> mobile-first adaptive
+              and responsive landing page to introduce ice cream products and
+              attract clients.
+            </p>
+            <p class="about-project">
+              <span class="about">My tasks:</span> layout of sections
+              Advantages, Gallery, Customer reviews. Coordination of team
+              codding.
+            </p>
+            <p class="about-project">
+              <span class="about">My role:</span> Team Lead, Front-End developer
+              (team project).
+            </p>
+          </li>
+          <li class="projects-item">
             <a
-              class="contacts-link start"
-              href="https://www.linkedin.com/in/maryna-skrypnyk/"
+              class="projects-link"
+              href="https://zhekager.github.io/project-Filmoteka/"
               target="_blank"
+              >Filmoteka</a
             >
-              <svg class="icon-contacts start" width="20" height="20">
-                <use
-                  class="icon"
-                  href="./img/sprite.svg#icon-linkedin"
-                ></use></svg
-              >linkedin.com/in/maryna-skrypnyk</a
+            <span class="dots">.............................</span>
+            <span class="link-description"
+              ><b>[</b
+              ><span class="tech-name"
+                >HTML5, SASS, JS, Parcel, GIT, Handlebars, RestApi, Local
+                Storage</span
+              ><b>]</b></span
             >
-          </div>
-        </div>
-
-        <!-- skills container-->
-        <div class="skills-container">
-          <h3 class="skills-title">Technical Skills</h3>
-          <ul class="skills-list">
-            <li class="skills-item">
-              <span class="skills-text">HTML5/CSS3/SASS</span>
-            </li>
-            <li class="skills-item">
-              <span class="skills-text">JavaScript</span>
-            </li>
-            <li class="skills-item">
-              <span class="skills-text">React.js</span>
-            </li>
-            <li class="skills-item">
-              <span class="skills-text">React router</span>
-            </li>
-            <li class="skills-item">
-              <span class="skills-text">Redux</span>
-            </li>
-            <li class="skills-item">
-              <span class="skills-text">GIT</span>
-            </li>
-            <li class="skills-item">
-              <span class="skills-text">WebPack/Parcel</span>
-            </li>
-            <li class="skills-item">
-              <span class="skills-text">Node.js</span>
-            </li>
-            <li class="skills-item">
-              <span class="skills-text">Scrum</span>
-            </li>
-            <li class="skills-item">
-              <span class="skills-text">Agile</span>
-            </li>
-          </ul>
-        </div>
-
-        <!--soft skills container-->
-        <div class="skills-container">
-          <h3 class="skills-title">Soft Skills</h3>
-          <ul class="skills-list">
-            <li class="skills-item">
-              <span class="skills-text">Teamwork</span>
-            </li>
-            <li class="skills-item">
-              <span class="skills-text">Proactive</span>
-            </li>
-            <li class="skills-item">
-              <span class="skills-text">Extreme self-motivation</span>
-            </li>
-            <li class="skills-item">
-              <span class="skills-text">Enthusiasm and dedication</span>
-            </li>
-            <li class="skills-item">
-              <span class="skills-text">A pretty good eye for details</span>
-            </li>
-          </ul>
-        </div>
-
-        <!--languages container-->
-        <div class="skills-container">
-          <h3 class="skills-title">Languages</h3>
-          <ul class="skills-list">
-            <li class="skills-item">
-              <span class="skills-text">Ukrainian..........[Native]</span>
-            </li>
-            <li class="skills-item">
-              <span class="skills-text"
-                >Russian...............[Proficiency]</span
-              >
-            </li>
-            <li class="skills-item">
-              <span class="skills-text"
-                >English................[Pre-Intermediate]</span
-              >
-            </li>
-          </ul>
-        </div>
-
-        <!--hobby container-->
-        <div class="skills-container">
-          <h3 class="skills-title">Interests</h3>
-          <ul class="skills-list">
-            <li class="skills-item">
-              <span class="skills-text">Fitness</span>
-            </li>
-            <li class="skills-item">
-              <span class="skills-text">Reading</span>
-            </li>
-            <li class="skills-item">
-              <span class="skills-text">Board games</span>
-            </li>
-          </ul>
-        </div>
-      </aside>
-
-      <!--about me container-->
-      <div class="about-me-container">
-        <!--about me main info-->
-        <div class="info-container">
-          <div class="info-tablet">
-            <h1 class="name">Maryna Skrypnyk</h1>
-            <h2 class="profession">Front-End Developer</h2>
-          </div>
-
-          <p class="description">
-            I am looking for a position in a company that's aimed at growth and progress together with a team. I have sound knowledge of HTML, CSS, JavaScript and React. I studied the basics of Node.js. Also, I have hands-on experience in following Agile/Scrum methodology when working in a team. I want to develop my skills as well as grow with a team.
-          </p>
-        </div>
-
-        <!--projects container-->
-        <div class="projects-container">
-          <h3 class="about-me-title">Project experience</h3>
-          <ol class="projects-list">
-            <li class="projects-item">
-              <a
-                class="projects-link"
-                href="https://maryna-skrypnyk.github.io/icecream-project-group-9/"
-                target="_blank"
-                >Ice Cream</a
-              >
-              <span class="dots">............................</span>
-              <span class="link-description"
-                ><b>[</b
-                ><span class="tech-name"
-                  >HTML5, CSS3, SASS, JS, Parcel, GIT</span
-                ><b>]</b></span
-              >
-              <p class="about-project">
-                <span class="about">About project:</span> mobile-first adaptive and responsive landing page to introduce ice cream products and attract clients.
-              </p>
-              <p class="about-project">
-                <span class="about">My tasks:</span> layout of sections
-                Advantages, Gallery, Customer reviews. Coordination of team
-                codding.
-              </p>
-              <p class="about-project">
-                <span class="about">My role:</span> Team Lead, Front-End developer (team project).
-              </p>
-            </li>
-            <li class="projects-item">
-              <a
-                class="projects-link"
-                href="https://zhekager.github.io/project-Filmoteka/"
-                target="_blank"
-                >Filmoteka</a
-              >
-              <span class="dots">.............................</span>
-              <span class="link-description"
-                ><b>[</b
-                ><span class="tech-name"
-                  >HTML5, SASS, JS, Parcel, GIT, Handlebars, RestApi, Local Storage</span
-                ><b>]</b></span
-              >
-              <p class="about-project">
-                <span class="about">About project:</span> application for choosing a movie with ability to add movies to the library.
-              </p>
-              <p class="about-project">
-                <span class="about">My tasks:</span> responsible for sections My
-                Library, Header. Coordination of team tasks.
-              </p>
-              <p class="about-project">
-                <span class="about">My role:</span> Srum Master, Front-End developer (team project).
-              </p>
-            </li>
-            <li class="projects-item">
-              <a
-                class="projects-link"
-                href="https://mis-myphonebook.netlify.app/"
-                target="_blank"
-                >Phonebook</a
-              >
-              <span class="dots">.........................</span>
-              <span class="link-description"
-                ><b>[</b
-                ><span class="tech-name"
-                  >SASS, JS, Parcel, React, Redux, Routing, Hooks, Axios, Netlify</span
-                ><b>]</b></span
-              >
-              <p class="about-project">
-                <span class="about">About project:</span> web-app with authorization, profile page, ability to add new contacts and existing contacts filter.
-              </p>
-              <p class="about-project">
-                <span class="about">My tasks:</span> development of a front-end application on react.
-              </p>
-              <p class="about-project">
-                <span class="about">My role:</span> Front-End developer (individual project).
-              </p>
-            </li>
-             <li class="projects-item">
-              <a
-                class="projects-link"
-                href="https://zhekager-makes-great-sites.netlify.app/"
-                target="_blank"
-                >Wallet</a
-              >
-              <span class="dots">.......................................</span>
-              <span class="link-description"
-                ><b>[</b
-                ><span class="tech-name"
-                  >React.js, Node.js, Redux, Routing, Hooks, HTML5, SASS, WebPack, GIT</span
-                ><b>]</b></span
-              >
-              <p class="about-project">
-                <span class="about">About project:</span> app with authorization, ability to add transactions for the wallet and display statistics on expenses filtered by month and year.
-              </p>
-              <p class="about-project">
-                <span class="about">My tasks:</span> responsible for authorization, adding transactions by user on the frontend side, routing, connecting to the backend. Also implemented logout functionality, modals and other components.
-              </p>
-              <p class="about-project">
-                <span class="about">My role:</span> Srum Master, Front-End developer (team project).
-              </p>
-            </li>
-            <!-- <li class="projects-item">
+            <p class="about-project">
+              <span class="about">About project:</span> application for choosing
+              a movie with ability to add movies to the library.
+            </p>
+            <p class="about-project">
+              <span class="about">My tasks:</span> responsible for sections My
+              Library, Header. Coordination of team tasks.
+            </p>
+            <p class="about-project">
+              <span class="about">My role:</span> Srum Master, Front-End
+              developer (team project).
+            </p>
+          </li>
+          <li class="projects-item">
+            <a
+              class="projects-link"
+              href="https://mis-myphonebook.netlify.app/"
+              target="_blank"
+              >Phonebook</a
+            >
+            <span class="dots">.........................</span>
+            <span class="link-description"
+              ><b>[</b
+              ><span class="tech-name"
+                >SASS, JS, Parcel, React, Redux, Routing, Hooks, Axios,
+                Netlify</span
+              ><b>]</b></span
+            >
+            <p class="about-project">
+              <span class="about">About project:</span> web-app with
+              authorization, profile page, ability to add new contacts and
+              existing contacts filter.
+            </p>
+            <p class="about-project">
+              <span class="about">My tasks:</span> development of a front-end
+              application on react.
+            </p>
+            <p class="about-project">
+              <span class="about">My role:</span> Front-End developer
+              (individual project).
+            </p>
+          </li>
+          <li class="projects-item">
+            <a
+              class="projects-link"
+              href="https://zhekager-makes-great-sites.netlify.app/"
+              target="_blank"
+              >Wallet</a
+            >
+            <span class="dots">.......................................</span>
+            <span class="link-description"
+              ><b>[</b
+              ><span class="tech-name"
+                >React.js, Node.js, Redux, Routing, Hooks, HTML5, SASS, WebPack,
+                GIT</span
+              ><b>]</b></span
+            >
+            <p class="about-project">
+              <span class="about">About project:</span> app with authorization,
+              ability to add transactions for the wallet and display statistics
+              on expenses filtered by month and year.
+            </p>
+            <p class="about-project">
+              <span class="about">My tasks:</span> responsible for
+              authorization, adding transactions by user on the frontend side,
+              routing, connecting to the backend. Also implemented logout
+              functionality, modals and other components.
+            </p>
+            <p class="about-project">
+              <span class="about">My role:</span> Srum Master, Front-End
+              developer (team project).
+            </p>
+          </li>
+          <!-- <li class="projects-item">
               <a
                 class="projects-link"
                 href="https://ua-expert.com/"
@@ -314,89 +358,90 @@
                 ><b>]</b></span
               >
             </li> -->
-          </ol>
+        </ol>
+      </div>
+
+      <!--work experience-->
+      <div class="projects-container">
+        <h3 class="about-me-title">Work experience</h3>
+
+        <!--company 1-->
+        <div>
+          <h4 class="profession-title">
+            <a
+              href="https://www.facebook.com/creditexpertiza/about/"
+              class="profession-company"
+              target="_blank"
+              >Independent forensic expert activity</a
+            >
+          </h4>
+          <span class="profession-time">
+            2019 – up to now <span class="profession-divider">|</span> Ukraine
+          </span>
         </div>
 
-        <!--work experience-->
-        <div class="projects-container">
-          <h3 class="about-me-title">Work experience</h3>
+        <!--company 2-->
+        <div>
+          <h4 class="profession-title">
+            Credit Expert
+            <a
+              href="https://ua-expert.com/ua/"
+              class="profession-company"
+              target="_blank"
+              >«Expert Research Service of Ukraine, Limited Liability
+              Company»</a
+            >
+          </h4>
+          <span class="profession-time">
+            2016 - 2019 <span class="profession-divider">|</span> Kyiv
+          </span>
+          <ul class="profession-duties">
+            <li class="profession-duties-item">
+              Providing expertise for court or out of court. I wrote over 100
+              credit expertises.
+            </li>
+            <li class="profession-duties-item">
+              Content marketing and Content management. I wrote over 50
+              publications, which I posted on webs and social networks.
+            </li>
+            <li class="profession-duties-item">
+              Full customer support services.
+            </li>
+            <li class="profession-duties-item">
+              Making calculations in Excel.
+            </li>
 
-          <!--company 1-->
-          <div>
-            <h4 class="profession-title">
-              <a
-                href="https://www.facebook.com/creditexpertiza/about/"
-                class="profession-company"
-                target="_blank"
-                >Independent forensic expert activity</a
-              >
-            </h4>
-            <span class="profession-time">
-              2019 – up to now <span class="profession-divider">|</span> Ukraine
-            </span>
-          </div>
+            <li class="profession-duties-item">
+              I successfully completed the certification in the Ministry of
+              Justice of Ukraine for an independent forensic expert, specialty
+              "Research of documents of financial and credit transactions".
+            </li>
+          </ul>
+        </div>
 
-          <!--company 2-->
-          <div>
-            <h4 class="profession-title">
-              Credit Expert
-              <a
-                href="https://ua-expert.com/ua/"
-                class="profession-company"
-                target="_blank"
-                >«Expert Research Service of Ukraine, Limited Liability Company»</a
-              >
-            </h4>
-            <span class="profession-time">
-              2016 - 2019 <span class="profession-divider">|</span> Kyiv
-            </span>
-            <ul class="profession-duties">
-              <li class="profession-duties-item">
-                Providing expertise for court or out of court. I wrote over 100
-                credit expertises.
-              </li>
-              <li class="profession-duties-item">
-                Content marketing and Content management. I wrote over 50
-                publications, which I posted on webs and social networks.
-              </li>
-              <li class="profession-duties-item">
-                Full customer support services.
-              </li>
-              <li class="profession-duties-item">
-                Making calculations in Excel.
-              </li>
+        <!-- company 3 -->
 
-              <li class="profession-duties-item">
-                I successfully completed the certification in the Ministry of
-                Justice of Ukraine for an independent forensic expert, specialty
-                "Research of documents of financial and credit transactions".
-              </li>
-            </ul>
-          </div>
+        <div>
+          <h4 class="profession-title">Banking activity</h4>
+          <span class="profession-time">
+            2007 – 2014 <span class="profession-divider">|</span> Kyiv
+          </span>
+        </div>
 
-          <!-- company 3 -->
-
-          <div>
-            <h4 class="profession-title">Banking activity</h4>
-            <span class="profession-time">
-              2007 – 2014 <span class="profession-divider">|</span> Kyiv
-            </span>
-          </div>
-
-          <div>
-            <h4 class="profession-title">
-              Lead Economist
-              <a
-                href="https://vtb.fg.gov.ua/"
-                class="profession-company"
-                target="_blank"
-                >«VTB Bank» Public Joint Stock company</a
-              >
-            </h4>
-            <span class="profession-time">
-              2008 - 2014 <span class="profession-divider">|</span> Kyiv
-            </span>
-            <!-- <ul class="profession-duties">
+        <div>
+          <h4 class="profession-title">
+            Lead Economist
+            <a
+              href="https://vtb.fg.gov.ua/"
+              class="profession-company"
+              target="_blank"
+              >«VTB Bank» Public Joint Stock company</a
+            >
+          </h4>
+          <span class="profession-time">
+            2008 - 2014 <span class="profession-divider">|</span> Kyiv
+          </span>
+          <!-- <ul class="profession-duties">
               <li class="profession-duties-item">
                 Робота з кредитною документацією.
               </li>
@@ -416,107 +461,104 @@
                 Участь у написанні та коригуванні нормативної бази.
               </li>
             </ul> -->
-          </div>
-
-          <!--company 4-->
-          <div>
-            <h4 class="profession-title">
-              Lead Economist
-              <a
-                href="https://ukrsotsbank.com/"
-                class="profession-company"
-                target="_blank"
-                >«Ukrsotsbank» Joint-stock Commercial Bank</a
-              >
-            </h4>
-            <span class="profession-time">
-              2007 - 2008 <span class="profession-divider">|</span> Kyiv
-            </span>
-          </div>
         </div>
 
-        <!--education-->
-        <div class="projects-container">
-          <h3 class="about-me-title">Education</h3>
-
-          <!--education 1-->
-          <div>
-            <h4 class="profession-title">
-              <a
-                href="https://kneu.edu.ua/"
-                class="education-company"
-                target="_blank"
-                >Kyiv National Economic University</a
-              >
-            </h4>
-            <ul class="education-duties">
-              <li class="profession-duties-item">
-                <p>
-                  Management of entrepreneurship<span class="dots"> ..................... </span>
-                    <span class="link-description"
-                    ><b>[</b><span class="tech-name">Magister of Economics</span
-                    ><b>]</b></span
-                  >
-                </p>
-              </li>
-              <li class="profession-duties-item">
-                <p>
-                  Economic of enterprises<span class="dots"
-                    > ................................................. </span
-                  ><span class="link-description"
-                    ><b>[</b
-                    ><span class="tech-name"
-                      >Bachelor of Economics, teacher of economics</span
-                    ><b>]</b></span
-                  >
-                </p>
-              </li>
-            </ul>
-            <span class="profession-time"
-              >2002 - 2007 <span class="profession-divider">|</span> Kyiv</span
+        <!--company 4-->
+        <div>
+          <h4 class="profession-title">
+            Lead Economist
+            <a
+              href="https://ukrsotsbank.com/"
+              class="profession-company"
+              target="_blank"
+              >«Ukrsotsbank» Joint-stock Commercial Bank</a
             >
-          </div>
+          </h4>
+          <span class="profession-time">
+            2007 - 2008 <span class="profession-divider">|</span> Kyiv
+          </span>
+        </div>
+      </div>
+
+      <!--education-->
+      <div class="projects-container">
+        <h3 class="about-me-title">Education</h3>
+
+        <!--education 1-->
+        <div>
+          <h4 class="profession-title">
+            <a
+              href="https://kneu.edu.ua/"
+              class="education-company"
+              target="_blank"
+              >Kyiv National Economic University</a
+            >
+          </h4>
+          <ul class="education-duties">
+            <li class="profession-duties-item">
+              <p>
+                Management of entrepreneurship<span class="dots">
+                  .....................
+                </span>
+                <span class="link-description"
+                  ><b>[</b><span class="tech-name">Magister of Economics</span
+                  ><b>]</b></span
+                >
+              </p>
+            </li>
+            <li class="profession-duties-item">
+              <p>
+                Economic of enterprises<span class="dots">
+                  ................................................. </span
+                ><span class="link-description"
+                  ><b>[</b
+                  ><span class="tech-name"
+                    >Bachelor of Economics, teacher of economics</span
+                  ><b>]</b></span
+                >
+              </p>
+            </li>
+          </ul>
+          <span class="profession-time"
+            >2002 - 2007 <span class="profession-divider">|</span> Kyiv</span
+          >
+        </div>
+      </div>
+
+      <!--additional education-->
+      <div class="projects-container">
+        <h3 class="about-me-title">Additional Education</h3>
+
+        <!--education 1-->
+        <div>
+          <h4 class="profession-title">
+            <a href="https://goit.ua/" class="education-company" target="_blank"
+              >IT School GoIT</a
+            >
+          </h4>
+          <p class="education-duties">Full Stack Developer</p>
+          <span class="profession-time"
+            >2020 - 2021 <span class="profession-divider">|</span> Kyiv</span
+          >
         </div>
 
-
-
-        <!--additional education-->
-        <div class="projects-container">
-          <h3 class="about-me-title">Additional Education</h3>
-
-          <!--education 1-->
-          <div>
-            <h4 class="profession-title">
-              <a
-                href="https://goit.ua/"
-                class="education-company"
-                target="_blank"
-                >IT School GoIT</a
-              >
-            </h4>
-            <p class="education-duties">Full Stack Developer</p>
-            <span class="profession-time"
-              >2020 - 2021 <span class="profession-divider">|</span> Kyiv</span
-            >
-          </div>
-
-          <!--education 2-->
-          <div>
-            <h4 class="profession-title">
-              <a
-                href="http://www.rock-it.com.ua/it-school"
-                class="education-company"
-                target="_blank"
-                >Rock-IT Recruitment School
-              </a>
-            </h4>
-            <p class="education-duties">Smart IT Sourcer</p>
-            <span class="profession-time"
-              >2020 <span class="profession-divider">|</span> Kyiv</span
-            >
-          </div>
-
+        <!--education 2-->
+        <div>
+          <h4 class="profession-title">
+            <a
+              href="http://www.rock-it.com.ua/it-school"
+              class="education-company"
+              target="_blank"
+              >Rock-IT Recruitment School
+            </a>
+          </h4>
+          <p class="education-duties">Smart IT Sourcer</p>
+          <span class="profession-time"
+            >2020 <span class="profession-divider">|</span> Kyiv</span
+          >
+        </div>
       </div>
     </div>
+    <script src="./js/index.js" type="module"></script>
   </body>
 </html>

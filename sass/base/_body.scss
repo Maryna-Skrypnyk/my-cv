@@ -5,13 +5,29 @@
 }
 
 body {
+  padding: 0;
   background: $body-bg-color;
-  padding: 40px 20px;
   font-family: $main-font;
+  // color: $primary-text-color;
 
   @media screen and (max-width: 767px) {
     padding: 0;
   }
+
+  @media screen and (min-width: 768px) {
+    padding: 40px 20px;
+  }
+}
+
+body.light-theme {
+  background-color: $body-bg-color;
+  color: $primary-black-color;
+}
+
+body.dark-theme {
+  background-color: $link-color;
+  color: $primary-text-color;
+  font-weight: $dots-font-weight;
 }
 
 .wrapper {

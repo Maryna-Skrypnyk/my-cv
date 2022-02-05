@@ -1,0 +1,94 @@
+/*toolbar*/
+.toolbar {
+  @media screen and (max-width: 768px) {
+    position: fixed;
+    right: 0;
+    top: 10px;
+  }
+
+  @media screen and (min-width: 768px) {
+    // display: flex;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+  }
+}
+
+/*theme switcher*/
+.theme-switch {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+
+  &__icon {
+    color: currentColor;
+    height: 24px;
+    width: 24px;
+    margin-right: 8px;
+  }
+
+  &__control {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    position: relative;
+    width: 64px;
+    height: 32px;
+    border-radius: 50em;
+    padding: 3px 0;
+  }
+
+  &__toggle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    pointer-events: none;
+  }
+
+  &__track {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 55px;
+    height: 100%;
+    //   color: transparent;
+    user-select: none;
+    background-color: #1d466c;
+    border-radius: inherit;
+    z-index: 1;
+    cursor: pointer;
+    box-shadow: 0 0 0 3px $accent-color;
+  }
+
+  &__marker {
+    position: relative;
+    background-color: $accent-color;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    z-index: 2;
+    pointer-events: none;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    transform: translateX(3px);
+    @include transit(transform);
+    //   transition: transform 250ms $cubic-bezier;
+  }
+
+  &__toggle:checked + &__track {
+    background-color: $primary-text-color;
+  }
+
+  &__toggle:checked ~ &__marker {
+    transform: translateX(27px);
+  }
+
+  &__toggle:focus + &__track,
+  &__toggle:active + &__track {
+    box-shadow: 0 0 0 3px $accent-color;
+  }
+}
