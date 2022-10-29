@@ -1,6 +1,6 @@
 /*toolbar*/
 .toolbar {
-  @media screen and (max-width: 768px) {
+  @media screen (max-width: 768px) {
     position: fixed;
     right: 0;
     top: 10px;
