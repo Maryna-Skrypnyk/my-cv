@@ -12,6 +12,10 @@
     top: 50px;
     right: 30px;
   }
+
+  @media print {
+    display: none;
+  }
 }
 
 /*theme switcher*/

@@ -888,6 +888,12 @@ img {
   }
 }
 
+@media print {
+  .toolbar {
+    display: none;
+  }
+}
+
 /*theme switcher*/
 .theme-switch {
   display: -webkit-box;
