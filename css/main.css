@@ -994,9 +994,6 @@ img {
     background: #ffffff;
     padding: 0;
   }
-  .theme-switch {
-    display: none;
-  }
   .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
