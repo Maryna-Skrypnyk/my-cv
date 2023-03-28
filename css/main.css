@@ -961,6 +961,12 @@ img {
   color: #a8a8a8;
 }
 
+@media screen and (min-width: 768px) {
+  .light-theme .theme-switch__icon--moon {
+    color: #1d466c;
+  }
+}
+
 .dark-theme .theme-switch__icon--sun {
   -webkit-transition-property: color;
   transition-property: color;
@@ -969,6 +975,12 @@ img {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: #a8a8a8;
+}
+
+@media screen and (min-width: 768px) {
+  .dark-theme .theme-switch__icon--sun {
+    color: #d6d8db;
+  }
 }
 
 .dark-theme .theme-switch__icon--moon {

@@ -38,11 +38,19 @@
   .light-theme &__icon--moon {
     @include transit(color);
     color: $secondary-text-color;
+
+    @media screen and (min-width: 768px) {
+      color: $sidebar-bg-color;
+    }
   }
 
   .dark-theme &__icon--sun {
     @include transit(color);
     color: $secondary-text-color;
+
+    @media screen and (min-width: 768px) {
+      color: $primary-text-color;
+    }
   }
 
   .dark-theme &__icon--moon {
