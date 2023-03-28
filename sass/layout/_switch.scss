@@ -9,7 +9,7 @@
   @media screen and (min-width: 768px) {
     position: absolute;
     top: 50px;
-    right: 30px;
+    right: 28px;
   }
 
   @media print {
@@ -37,12 +37,12 @@
 
   .light-theme &__icon--moon {
     @include transit(color);
-    color: $sidebar-bg-color;
+    color: $secondary-text-color;
   }
 
   .dark-theme &__icon--sun {
     @include transit(color);
-    color: $primary-text-color;
+    color: $secondary-text-color;
   }
 
   .dark-theme &__icon--moon {

@@ -70,6 +70,11 @@
   @media screen and (min-width: 960px) {
     margin: 40px 35px 0 35px;
   }
+
+  & .personal {
+    margin-bottom: 15px;
+    @include secondaryfont();
+  }
 }
 
 .contacts-title,
@@ -93,7 +98,7 @@
   &:focus,
   .contact-block:hover &,
   .contact-block:focus & {
-    font-weight: $title-font-weight;
+    font-weight: $secondary-font-weight;
     text-decoration: underline $accent-color;
   }
 }

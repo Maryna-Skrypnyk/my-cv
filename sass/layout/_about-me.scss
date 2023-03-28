@@ -67,12 +67,6 @@
   line-height: $profession-line-height;
 }
 
-.personal {
-  margin-bottom: 15px;
-  @include secondaryfont();
-  color: $accent-color;
-}
-
 .profession-time {
   @include secondaryfont();
 }
@@ -103,7 +97,7 @@
     &:focus,
     .projects-item:hover &,
     .projects-item:focus & {
-      font-size: 18px;
+      font-size: 16.5px;
     }
   }
 }
@@ -166,16 +160,13 @@
 .profession-company {
   color: $accent-color;
   text-decoration: none;
+  font-size: $profession-font-size;
   @include transit(font-size);
 
   &:hover,
   &:focus {
-    font-size: 17px;
+    font-size: 16.5px;
   }
-}
-
-.profession-divider-personal {
-  color: $accent-color;
 }
 
 .profession-duties {
@@ -196,11 +187,12 @@
   margin-bottom: 5px;
   @include companyfont($accent-color);
   text-decoration: none;
+  font-size: $profession-font-size;
   @include transit(font-size);
 
   &:hover,
   &:focus {
-    font-size: 17px;
+    font-size: 16.5px;
   }
 }
 

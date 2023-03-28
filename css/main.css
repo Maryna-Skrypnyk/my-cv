@@ -511,6 +511,14 @@ img {
   }
 }
 
+.contacts-container .personal {
+  margin-bottom: 15px;
+  color: #a8a8a8;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 2;
+}
+
 .contacts-title,
 .skills-title {
   margin-bottom: 10px;
@@ -550,7 +558,7 @@ img {
 .contacts-link:hover, .contacts-link:focus,
 .contact-block:hover .contacts-link,
 .contact-block:focus .contacts-link {
-  font-weight: 700;
+  font-weight: 600;
   -webkit-text-decoration: underline #b17f83;
           text-decoration: underline #b17f83;
 }
@@ -710,15 +718,6 @@ img {
   line-height: 1.5;
 }
 
-.personal {
-  margin-bottom: 15px;
-  color: #a8a8a8;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 2;
-  color: #b17f83;
-}
-
 .profession-time {
   color: #a8a8a8;
   font-size: 12px;
@@ -760,7 +759,7 @@ img {
 .projects-item .projects-link:hover, .projects-item .projects-link:focus,
 .projects-item:hover .projects-item .projects-link,
 .projects-item:focus .projects-item .projects-link {
-  font-size: 18px;
+  font-size: 16.5px;
 }
 
 .tech-name {
@@ -836,6 +835,7 @@ img {
 .profession-company {
   color: #b17f83;
   text-decoration: none;
+  font-size: 16px;
   -webkit-transition-property: font-size;
   transition-property: font-size;
   -webkit-transition-duration: 250ms;
@@ -845,11 +845,7 @@ img {
 }
 
 .profession-company:hover, .profession-company:focus {
-  font-size: 17px;
-}
-
-.profession-divider-personal {
-  color: #b17f83;
+  font-size: 16.5px;
 }
 
 .profession-duties {
@@ -872,6 +868,7 @@ img {
   font-weight: 700;
   line-height: 1.5;
   text-decoration: none;
+  font-size: 16px;
   -webkit-transition-property: font-size;
   transition-property: font-size;
   -webkit-transition-duration: 250ms;
@@ -881,7 +878,7 @@ img {
 }
 
 .education-company:hover, .education-company:focus {
-  font-size: 17px;
+  font-size: 16.5px;
 }
 
 .education-duties {
@@ -916,7 +913,7 @@ img {
   .toolbar {
     position: absolute;
     top: 50px;
-    right: 30px;
+    right: 28px;
   }
 }
 
@@ -961,7 +958,7 @@ img {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  color: #1d466c;
+  color: #a8a8a8;
 }
 
 .dark-theme .theme-switch__icon--sun {
@@ -971,7 +968,7 @@ img {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  color: #d6d8db;
+  color: #a8a8a8;
 }
 
 .dark-theme .theme-switch__icon--moon {
