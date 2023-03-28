@@ -7,7 +7,8 @@
 
   &.dark-theme {
     background-color: $sidebar-bg-color;
-    color: $primary-white-color;
+    // color: $primary-white-color;
+    color: $primary-text-color;
   }
 
   @media screen and (max-width: 767px) {
@@ -36,8 +37,6 @@
 }
 
 .profession {
-  //    margin-bottom: 25px;
-  // @include mainfont($primary-black-color);
   line-height: $profession-line-height;
   font-size: 25px;
   font-weight: $title-font-weight;
@@ -84,7 +83,6 @@
 
 .about-me-title {
   margin-bottom: 10px;
-  // @include titlefont($primary-black-color);
   font-size: $title-about-font-size;
   font-weight: $title-font-weight;
   line-height: $title-about-line-height;
@@ -96,7 +94,6 @@
   font-weight: $title-font-weight;
 
   .projects-link {
-    // @include mainfont($link-color);
     @include companyfont($accent-color);
     text-decoration: none;
 
@@ -107,16 +104,14 @@
     .projects-item:hover &,
     .projects-item:focus & {
       font-size: 18px;
-      // text-decoration: underline;
     }
   }
 }
 
 .tech-name {
-  // @include mainfont($link-color);
   font-size: $main-font-size;
-  font-weight: $primary-font-weight;
   line-height: $profession-line-height;
+  font-weight: $secondary-font-weight;
 }
 
 .dots {
@@ -152,20 +147,17 @@
 }
 
 .about-project {
-  // @include mainfont($link-color);
   font-size: $main-font-size;
-  font-weight: $primary-font-weight;
+  font-weight: $dim-font-weight;
   line-height: $profession-line-height;
 }
 
 .about {
-  font-weight: 600;
+  font-weight: $secondary-font-weight;
 }
 
 .profession-title {
   margin-top: 10px;
-  // margin-bottom: 5px;
-  // @include companyfont($primary-black-color);
   font-size: $profession-font-size;
   font-weight: $title-font-weight;
   line-height: $profession-line-height;
@@ -178,13 +170,8 @@
 
   &:hover,
   &:focus {
-    // text-decoration: underline;
     font-size: 17px;
   }
-}
-
-.profession-divider {
-  color: $primary-black-color;
 }
 
 .profession-divider-personal {
@@ -199,7 +186,6 @@
 }
 
 .profession-duties-item {
-  // @include mainfont($link-color);
   font-size: $main-font-size;
   font-weight: $primary-font-weight;
   line-height: $profession-line-height;
@@ -214,7 +200,6 @@
 
   &:hover,
   &:focus {
-    // text-decoration: underline;
     font-size: 17px;
   }
 }
@@ -223,15 +208,12 @@
   margin-top: 0;
   margin-bottom: 0;
   list-style: none;
-  // @include mainfont($link-color);
   font-size: $main-font-size;
   font-weight: $primary-font-weight;
   line-height: $profession-line-height;
 }
 
 .education-duties-item {
-  // margin-left: 20px;
-  // @include mainfont($link-color);
   font-size: $main-font-size;
   font-weight: $primary-font-weight;
   line-height: $profession-line-height;

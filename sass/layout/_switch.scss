@@ -7,7 +7,6 @@
   }
 
   @media screen and (min-width: 768px) {
-    // display: flex;
     position: absolute;
     top: 50px;
     right: 30px;
@@ -29,6 +28,26 @@
     height: 24px;
     width: 24px;
     margin-right: 8px;
+  }
+
+  .light-theme &__icon--sun {
+    @include transit(color);
+    color: $accent-color;
+  }
+
+  .light-theme &__icon--moon {
+    @include transit(color);
+    color: $sidebar-bg-color;
+  }
+
+  .dark-theme &__icon--sun {
+    @include transit(color);
+    color: $primary-text-color;
+  }
+
+  .dark-theme &__icon--moon {
+    @include transit(color);
+    color: $accent-color;
   }
 
   &__control {
@@ -62,6 +81,7 @@
     height: 100%;
     //   color: transparent;
     user-select: none;
+    @include transit(background-color);
     background-color: #1d466c;
     border-radius: inherit;
     z-index: 1;

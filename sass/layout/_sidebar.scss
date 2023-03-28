@@ -27,7 +27,6 @@
   }
 
   .profession-mob {
-    // margin-bottom: 15px;
     @include mainfont($primary-text-color);
     font-weight: $secondary-font-weight;
     font-size: $profession-font-size;
@@ -38,7 +37,6 @@
     @include namefont($primary-white-color);
 
     @media screen and (max-width: 480px) {
-      // margin-bottom: 30px;
       font-size: calc((100vw - 320px) / (480 - 320) * (30 - 24) + 24px);
     }
 
@@ -67,7 +65,6 @@
   @media screen and (max-width: 767px) {
     margin-left: calc((100vw - 320px) / (480 - 320) * (60 - 35) + 35px);
     margin-right: calc((100vw - 320px) / (480 - 320) * (60 - 35) + 35px);
-    // margin-right: 22px;
   }
 
   @media screen and (min-width: 960px) {
@@ -81,20 +78,23 @@
   @include titlefont($primary-white-color);
 }
 
+.contact-block:not(:last-child) {
+  margin-bottom: 5px;
+}
+
 .contacts-link {
   display: flex;
   align-items: center;
-  margin-bottom: 5px;
-  text-decoration: none;
+  text-decoration: underline transparent;
   @include mainfont($accent-color);
-  @include transit(font-weight);
+  @include transit(font-weight, text-decoration);
 
   &:hover,
   &:focus,
   .contact-block:hover &,
   .contact-block:focus & {
     font-weight: $title-font-weight;
-    text-decoration: underline;
+    text-decoration: underline $accent-color;
   }
 }
 
@@ -104,8 +104,6 @@
 
 .icon-contacts {
   margin-right: 5px;
-  // width: 20px;
-  // height: 20px;
 }
 
 .icon {
@@ -139,16 +137,15 @@
     margin-left: calc((100vw - 320px) / (480 - 320) * (60 - 35) + 35px);
     margin-right: calc((100vw - 320px) / (480 - 320) * (60 - 35) + 35px);
   }
-
-  // @media screen and (min-width: 960px) {
-  //   margin: 40px 35px 0 35px;
-  // }
 }
 
 .skills-item {
   margin-left: 20px;
-  margin-bottom: 4px;
   @include mainfont($accent-color);
+
+  &:not(:last-child) {
+    margin-bottom: 4px;
+  }
 }
 
 .skills-text {

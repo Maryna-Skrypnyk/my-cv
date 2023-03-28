@@ -2,7 +2,6 @@
   body {
     background: $primary-white-color;
     padding: 0;
-    // font-family: $main-font;
   }
 
   .toolbar {
@@ -14,24 +13,30 @@
     box-shadow: none;
   }
 
+  //sidebar
   .sidebar {
     width: 330px;
-    // box-shadow: none;
-    height: 100vh;
   }
 
   .info-mob {
     display: none;
   }
 
-  .contacts-container {
-    margin: 40px 30px 0 30px;
+  .contacts-container,
+  .skills-container {
+    margin: 30px 30px 0;
   }
 
   .skills-container {
-    margin: 30px 30px 0 30px;
+    margin: 30px 30px 0;
+
+    &--lang {
+      margin-top: 10px;
+      padding-top: 20px;
+    }
   }
 
+  //main info
   .about-me-container {
     padding: 35px 25px;
   }

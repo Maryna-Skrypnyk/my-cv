@@ -280,6 +280,32 @@ summary {
   /* Legacy iOS */
 }
 
+/* montserrat-200 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/montserrat-v25-cyrillic_latin-200.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/montserrat-v25-cyrillic_latin-200.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v25-cyrillic_latin-200.woff2") format("woff2"), url("../fonts/montserrat-v25-cyrillic_latin-200.woff") format("woff"), url("../fonts/montserrat-v25-cyrillic_latin-200.ttf") format("truetype"), url("../fonts/montserrat-v25-cyrillic_latin-200.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+
+/* montserrat-300 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/montserrat-v25-cyrillic_latin-300.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/montserrat-v25-cyrillic_latin-300.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v25-cyrillic_latin-300.woff2") format("woff2"), url("../fonts/montserrat-v25-cyrillic_latin-300.woff") format("woff"), url("../fonts/montserrat-v25-cyrillic_latin-300.ttf") format("truetype"), url("../fonts/montserrat-v25-cyrillic_latin-300.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+
 /* montserrat-regular - latin_cyrillic */
 @font-face {
   font-family: 'Montserrat';
@@ -357,7 +383,7 @@ body.light-theme {
 body.dark-theme {
   background-color: #595959;
   color: #d6d8db;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 .wrapper {
@@ -494,6 +520,10 @@ img {
   line-height: 1.08;
 }
 
+.contact-block:not(:last-child) {
+  margin-bottom: 5px;
+}
+
 .contacts-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -501,14 +531,16 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 5px;
-  text-decoration: none;
+  -webkit-text-decoration: underline transparent;
+          text-decoration: underline transparent;
   color: #b17f83;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
-  -webkit-transition-property: font-weight;
-  transition-property: font-weight;
+  -webkit-transition-property: font-weight, -webkit-text-decoration;
+  transition-property: font-weight, -webkit-text-decoration;
+  transition-property: font-weight, text-decoration;
+  transition-property: font-weight, text-decoration, -webkit-text-decoration;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -519,7 +551,8 @@ img {
 .contact-block:hover .contacts-link,
 .contact-block:focus .contacts-link {
   font-weight: 700;
-  text-decoration: underline;
+  -webkit-text-decoration: underline #b17f83;
+          text-decoration: underline #b17f83;
 }
 
 .contacts-link.start {
@@ -580,11 +613,14 @@ img {
 
 .skills-item {
   margin-left: 20px;
-  margin-bottom: 4px;
   color: #b17f83;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
+}
+
+.skills-item:not(:last-child) {
+  margin-bottom: 4px;
 }
 
 .skills-text {
@@ -601,7 +637,7 @@ img {
 
 .about-me-container.dark-theme {
   background-color: #1d466c;
-  color: #ffffff;
+  color: #d6d8db;
 }
 
 @media screen and (max-width: 767px) {
@@ -729,8 +765,8 @@ img {
 
 .tech-name {
   font-size: 14px;
-  font-weight: 400;
   line-height: 1.5;
+  font-weight: 600;
 }
 
 .dots {
@@ -782,7 +818,7 @@ img {
 
 .about-project {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
 }
 
@@ -810,10 +846,6 @@ img {
 
 .profession-company:hover, .profession-company:focus {
   font-size: 17px;
-}
-
-.profession-divider {
-  color: #000000;
 }
 
 .profession-divider-personal {
@@ -912,6 +944,46 @@ img {
   margin-right: 8px;
 }
 
+.light-theme .theme-switch__icon--sun {
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: #b17f83;
+}
+
+.light-theme .theme-switch__icon--moon {
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: #1d466c;
+}
+
+.dark-theme .theme-switch__icon--sun {
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: #d6d8db;
+}
+
+.dark-theme .theme-switch__icon--moon {
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: #b17f83;
+}
+
 .theme-switch__control {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -950,6 +1022,12 @@ img {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #1d466c;
   border-radius: inherit;
   z-index: 1;
@@ -1012,16 +1090,20 @@ img {
   }
   .sidebar {
     width: 330px;
-    height: 100vh;
   }
   .info-mob {
     display: none;
   }
-  .contacts-container {
-    margin: 40px 30px 0 30px;
+  .contacts-container,
+  .skills-container {
+    margin: 30px 30px 0;
   }
   .skills-container {
-    margin: 30px 30px 0 30px;
+    margin: 30px 30px 0;
+  }
+  .skills-container--lang {
+    margin-top: 10px;
+    padding-top: 20px;
   }
   .about-me-container {
     padding: 35px 25px;

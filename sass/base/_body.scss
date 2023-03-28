@@ -17,6 +17,11 @@ body {
   @media screen and (min-width: 768px) {
     padding: 40px 20px;
   }
+
+  // повна заборона друку документа
+  // @media print {
+  //   display: none;
+  // }
 }
 
 body.light-theme {
@@ -27,7 +32,8 @@ body.light-theme {
 body.dark-theme {
   background-color: $link-color;
   color: $primary-text-color;
-  font-weight: $dots-font-weight;
+  // font-weight: $dots-font-weight;
+  font-weight: $primary-font-weight;
 }
 
 .wrapper {
