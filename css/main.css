@@ -1043,7 +1043,6 @@ img {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #1d466c;
-  background-color: #bebebe;
   border-radius: inherit;
   z-index: 1;
   cursor: pointer;
