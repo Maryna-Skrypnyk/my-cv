@@ -635,6 +635,11 @@ img {
   color: #d6d8db;
 }
 
+.dots-lang {
+  color: #bebebe;
+  font-weight: 100;
+}
+
 .about-me-container {
   padding: 30px 30px 50px 30px;
 }
@@ -1038,11 +1043,18 @@ img {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #1d466c;
+  background-color: #bebebe;
   border-radius: inherit;
   z-index: 1;
   cursor: pointer;
   -webkit-box-shadow: 0 0 0 3px #b17f83;
           box-shadow: 0 0 0 3px #b17f83;
+}
+
+@media screen and (max-width: 767px) {
+  .dark-theme .theme-switch__toggle:checked + .theme-switch__track {
+    background-color: #bebebe;
+  }
 }
 
 .theme-switch__marker {

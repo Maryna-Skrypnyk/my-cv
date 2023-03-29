@@ -87,7 +87,6 @@
     top: 0;
     width: 55px;
     height: 100%;
-    //   color: transparent;
     user-select: none;
     @include transit(background-color);
     background-color: #1d466c;
@@ -95,6 +94,12 @@
     z-index: 1;
     cursor: pointer;
     box-shadow: 0 0 0 3px $accent-color;
+  }
+
+  @media screen and (max-width: 767px) {
+    .dark-theme &__toggle:checked + &__track {
+      background-color: $dots-color;
+    }
   }
 
   &__marker {

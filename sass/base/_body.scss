@@ -34,6 +34,12 @@ body.dark-theme {
   color: $primary-text-color;
   // font-weight: $dots-font-weight;
   font-weight: $primary-font-weight;
+
+  // @media screen and (max-width: 767px) {
+  //   & .theme-switch__toggle:checked + .theme-switch__track {
+  //     background-color: $dots-color;
+  //   }
+  // }
 }
 
 .wrapper {
