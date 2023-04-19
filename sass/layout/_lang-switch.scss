@@ -1,0 +1,18 @@
+.lang-switch {
+  @media screen and (max-width: 768px) {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 16px;
+    // right: 50px;
+    left: 91%;
+  }
+
+  @media print {
+    display: none;
+  }
+}

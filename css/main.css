@@ -1098,6 +1098,28 @@ span.profession-company:focus {
           box-shadow: 0 0 0 3px #b17f83;
 }
 
+@media screen and (max-width: 768px) {
+  .lang-switch {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .lang-switch {
+    position: absolute;
+    top: 16px;
+    left: 91%;
+  }
+}
+
+@media print {
+  .lang-switch {
+    display: none;
+  }
+}
+
 @media print {
   body {
     background: #ffffff;
